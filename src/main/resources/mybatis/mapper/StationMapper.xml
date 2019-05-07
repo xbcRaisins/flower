@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xbc.cloud.xbcsystem.dao.StationDao">
+
+
+    <select id="add" parameterType="com.xbc.cloud.xbcsystem.entity.Station">
+         insert into station
+         (num,name,code,pinyin,abbr)
+         values(#{num},#{name},#{code},#{pinyin},#{abbr})
+    </select>
+
+</mapper>
